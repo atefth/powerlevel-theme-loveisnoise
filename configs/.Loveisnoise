@@ -1,0 +1,15 @@
+# CUSTOM PROMPTS
+source ~/.powerlevel/settings/Loveisnoise.zsh
+# source ~/.powerlevel/scripts/padding.zsh
+source ~/.powerlevel/scripts/environment.zsh
+source ~/.powerlevel/scripts/wifi_signal.zsh
+source ~/.powerlevel/scripts/battery.zsh
+
+# PROMPT
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f%k%F{09}%f"
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%K{09} %F{119} %F{230}`date +%T` %f%k%F{09}%f "
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(custom_wifi_signal zsh_battery_level ram load background_jobs_joined)
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(root_indicator dir context_joined custom_environment_joined vcs_joined)
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+
